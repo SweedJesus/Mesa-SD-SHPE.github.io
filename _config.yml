@@ -1,0 +1,12 @@
+title: SD Mesa College SHPE
+email: mesasdshpe@gmail.com
+description: San Diego Mesa College chapter of the Society of Hispanic Professional Engineers
+baseurl: ""
+url: ""
+
+markdown: kramdown
+
+exclude:
+  - .git
+  - Gemfile
+  - Gemfile.lock
