@@ -4,6 +4,9 @@ description: San Diego Mesa College chapter of the Society of Hispanic Professio
 baseurl: ""
 url: ""
 
+plugins:
+  - jekyll-paginate
+
 markdown: kramdown
 
 exclude:

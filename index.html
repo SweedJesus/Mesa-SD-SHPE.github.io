@@ -1,0 +1,25 @@
+---
+---
+<!doctype html>
+<html lang='{{ site.lang | default: "en-US" }}'>
+<head>
+  <meta charset="utf-8">
+  <title>
+    {{ site.title }}
+  </title>
+  <link rel="stylesheet" href='{{ "/assets/css/home-style.css?v=" | append: site.github.build_revision | relative_url }}'>
+</head>
+<body>
+  {% include header.html %}
+  <div>
+    <div id="background">
+      <img src="{{ '/assets/img/770352.jpg' | absolute_url }}"/>
+    </div>
+    <!--<div id="gradient"></div>-->
+    <div id="title">
+      <h1>San Diego Mesa College</p>
+      <p>Society of Hispanic Professional Engineers</p>
+    </div>
+  </div>
+</body>
+</html>

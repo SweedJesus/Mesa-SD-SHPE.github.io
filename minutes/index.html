@@ -1,0 +1,11 @@
+---
+layout: default
+title: "Minutes"
+---
+<ul>
+  {% for page in site.pages %}
+  {% if page.category == "minutes" %}
+  <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+  {% endif %}
+  {% endfor %}
+</ul>
