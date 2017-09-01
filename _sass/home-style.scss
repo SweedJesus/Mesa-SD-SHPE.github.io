@@ -16,6 +16,7 @@ html {
   height: 100%;
   z-index: -1;
   background-position: center center;
+  background-size: cover;
 }
 
 #gradient {
@@ -41,11 +42,11 @@ html {
   }
 
   h1 {
-    font-size: 8vh;
+    font-size: 4vw;
   }
 
   p {
-    font-size: 5vh;
+    font-size: 2vw;
   }
 }
 
@@ -64,7 +65,7 @@ html {
 
   a {
     color: #fff;
-    font-size: 20px;
+    font-size: 2vw;
 
     &:hover {
       color: $link-hover-color;
@@ -99,3 +100,4 @@ a {
     color: #6699ff;
   }
 }
+
