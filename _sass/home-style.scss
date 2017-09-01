@@ -1,14 +1,10 @@
-$color-a: #4d4d4d;
-$link-color: #267cb9;
-$link-hover-color: #069;
-
 html * {
-  color: $color-a;
   margin: 0;
   padding: 0;
 }
 
 html, body {
+  color: $color-a;
   margin: 0;
   padding: 0;
 }
@@ -81,6 +77,10 @@ html, body {
   a {
     color: #fff;
     font-size: 20px;
+
+    &:hover {
+      color: $link-hover-color;
+    }
   }
 
   ul {
