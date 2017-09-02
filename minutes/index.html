@@ -4,7 +4,7 @@ title: "Minutes"
 ---
 <ul>
   {% for page in site.pages %}
-  {% if page.category == "minutes" %}
+  {% if page.category == "minutes" and page.template == nil %}
   <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
   {% endif %}
   {% endfor %}
