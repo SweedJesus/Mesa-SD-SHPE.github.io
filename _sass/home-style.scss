@@ -1,9 +1,9 @@
 
-$color-a: #005581;
-$color-b: #ffd200;
+$color-a: #023867;
+$color-b: #fdbb30;
 
 $text-color-a: #fff;
-$link-color: #267cb9;
+$link-color: $color-b;
 $link-hover-color: #4199d8;
 
 html * {
@@ -13,7 +13,7 @@ html * {
 
 html, body {
   font-family: 'Roboto', sans-serif;
-  color: $text-color-a;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
@@ -27,7 +27,7 @@ html, body {
   z-index: -1;
   background-position: center center;
   background-size: cover;
-  opacity: 0.7;
+  //opacity: 0.7;
 }
 
 #title {
@@ -37,7 +37,8 @@ html, body {
   top: 50%;
   transform: translateY(-50%);
   background-color: $color-a;
-  padding: 20px 0;
+  padding: 8px 0;
+  box-shadow: 0 0 4px black;
 
   h1 {
     text-align: center;
@@ -55,11 +56,11 @@ html, body {
   width: 100%;
   height: 48px;
   margin-bottom: 24px;
-  background-color: $color-a;
 
   a {
-    color: $text-color-a;
+    color: $link-color;
     font-size: 24px;
+    text-shadow: 0 0 4px black;
 
     &:hover {
       color: $link-hover-color;
