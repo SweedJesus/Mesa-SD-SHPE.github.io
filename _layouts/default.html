@@ -3,16 +3,17 @@
 <!doctype html>
 <html lang='{{ site.lang | default: "en-US" }}'>
 <head>
-{% include head.html %}
+  {% include head.html %}
 </head>
 <body>
-{% include header.html %}
-<div id="wrap">
-<div id="content">
-<h2>{{ page.title }}</h2>
-<hr/>
-{{ content }}
-</div>
-</div>
+  {% include header.html %}
+  <div id="wrap">
+    <div id="content">
+      <h1>{{ page.title }}</h1>
+      <hr/>
+      {{ content }}
+      <div id="whitespace"></div>
+    </div>
+  </div>
 </body>
 </html>

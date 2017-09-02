@@ -44,11 +44,13 @@ html, body {
     text-align: center;
     color: $color-b;
     font-size: 7vw;
+    font-weight: normal;
   }
 
   p {
     text-align: center;
     font-size: 4vw;
+    font-weight: normal;
   }
 }
 
@@ -59,7 +61,7 @@ html, body {
 
   a {
     color: $link-color;
-    font-size: 24px;
+    font-size: 2vw;
     text-shadow: 0 0 4px black;
 
     &:hover {
@@ -94,6 +96,20 @@ a {
 
   &:hover {
     color: #6699ff;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  #title {
+    //top: 0;
+    //transform: none;
+
+    h1 {
+      //font-size: 4em;
+    }
+    p {
+      //font-size: 1em;
+    }
   }
 }
 
