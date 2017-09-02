@@ -11,4 +11,4 @@ title: "About & Contact"
 
 1. *"Do I need to be Hispanic to be in the club?"*
 
-  No
+  No, everyone is welcome.

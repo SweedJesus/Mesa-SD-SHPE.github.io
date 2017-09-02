@@ -1,3 +1,15 @@
+$breakpoint-tablet: 768px;
+$breakpoint-phone: 480px;
+
+$font-size-4: 40px;
+$font-size-3: 34px;
+$font-size-2: 28px;
+$font-size-1: 24px;
+
+$font-size-4-phone: 26px;
+$font-size-3-phone: 22px;
+$font-size-2-phone: 18px;
+$font-size-1-phone: 14px;
 
 $color-a: #005581;
 $color-b: #ffd200;
@@ -18,32 +30,49 @@ html, body {
   padding: 0;
 }
 
+*:first-child {
+  padding-top: 0;
+}
+
+*:last-child {
+  margin-bottom: 0;
+}
+
 h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin-bottom: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+  padding-top: 40px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: $font-size-4;
+  @media (max-width: $breakpoint-tablet) {
+    font-size: $font-size-4-phone;
+  }
 }
 
 h2 {
-  font-size: 34px;
+  font-size: $font-size-3;
+  @media (max-width: $breakpoint-tablet) {
+    font-size: $font-size-3-phone;
+  }
 }
 
 h3 {
-  font-size: 28px;
+  font-size: $font-size-2;
+  @media (max-width: $breakpoint-tablet) {
+    font-size: $font-size-2-phone;
+  }
 }
 
-h4, h5, h6 {
-  font-size: 24px;
-}
-
-p, a, li {
-  font-size: 24px;
+h4, h5, h6, p, a, li {
+  font-size: $font-size-1;
+  @media (max-width: $breakpoint-tablet) {
+    font-size: $font-size-1-phone;
+  }
 }
 
 a {
@@ -64,29 +93,41 @@ hr {
   margin-bottom: 20px;
 }
 
-#wrap {
-  position: relative;
+nav {
   width: 100%;
-  height: 100%;
-}
-
-#content {
-  width: 640px;
-  margin: 0 auto;
-}
-
-#nav {
-  width: 100%;
+  text-align: center;
   height: 48px;
   margin-bottom: 24px;
-
-  a {
-    font-size: 24px;
+  @media (max-width: $breakpoint-tablet) {
+    height: 40px;
+    margin-bottom: 10px;
   }
 
   ul {
     height: 28px;
     margin: 10px 0;
+    @media (max-width: $breakpoint-tablet) {
+      height: 20px;
+      margin: 10px 0;
+    }
+  }
+
+  li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 20px;
+    @media (max-width: $breakpoint-tablet) {
+      padding: 0 4px;
+    }
+  }
+
+  #navs {
+    display: inline-block;
+    width: 100%;
+    @media (max-width: $breakpoint-tablet) {
+      width: auto;
+    }
+    height: 100%;
   }
 
   #left {
@@ -95,17 +136,62 @@ hr {
 
   #right {
     float: right;
-  }
-
-  li {
-    display: inline;
-    list-style-type: none;
-    padding: 0 20px;
+    @media (max-width: $breakpoint-tablet) {
+      float: left;
+    }
   }
 }
 
-#whitespace {
+#wrap {
+  position: relative;
   width: 100%;
-  height: 25vh;
+  height: 100%;
+}
+
+#content {
+  width: 640px;
+  @media (max-width: $breakpoint-tablet) {
+    width: 260px;
+  }
+  margin: 0 auto;
+}
+
+// -----------------------------------------------------------------------------
+// Landing-page only styles below
+
+#background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-position: center center;
+  background-size: cover;
+}
+
+#title {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $color-a;
+  padding: 8px 0;
+  box-shadow: 0 0 4px black;
+
+  h1 {
+    text-align: center;
+    color: $color-b;
+    font-size: 7vw;
+    font-weight: normal;
+  }
+
+  p {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: normal;
+    color: #fff;
+  }
 }
 

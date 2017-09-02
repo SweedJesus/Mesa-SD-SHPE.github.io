@@ -2,12 +2,15 @@
 ---
 <!doctype html>
 <html lang='{{ site.lang | default: "en-US" }}'>
-<head>
-  <meta charset="utf-8">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/home-style.css' | absolute_url }}">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
+{% include head.html %}
+<style>
+* {
+  text-shadow: 0 0 10px black;
+}
+a {
+  color: #ffd200;
+}
+</style>
 <body>
   {% include header.html %}
   <div>
