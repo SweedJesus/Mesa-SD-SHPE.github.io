@@ -1,8 +1,26 @@
+
+$text-color-a: #4d4d4d;
+$link-color: #267cb9;
+$link-hover-color: #4199d8;
+
+html * {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  color: $text-color-a;
+  margin: 0;
+  padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
-ul {
+ul, ol {
   list-style-position: inside;
 }
 
@@ -14,6 +32,10 @@ a {
   &:hover {
     color: $link-hover-color;
   }
+}
+
+hr {
+  margin-bottom: 20px;
 }
 
 #wrap {
@@ -28,14 +50,13 @@ a {
 }
 
 #nav {
-  //position: absolute;
   width: 100%;
   height: 48px;
   margin-bottom: 24px;
 
   a {
-    font-size: 20px;
-    color: $color-a;
+    color: $text-color-a;
+    font-size: 24px;
 
     &:hover {
       color: $link-hover-color;
@@ -43,6 +64,7 @@ a {
   }
 
   ul {
+    height: 28px;
     margin: 10px 0;
   }
 
@@ -59,9 +81,5 @@ a {
     list-style-type: none;
     padding: 0 20px;
   }
-}
-
-hr {
-  margin-bottom: 20px;
 }
 

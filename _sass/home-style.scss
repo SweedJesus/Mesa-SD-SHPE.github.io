@@ -1,11 +1,22 @@
-html {
-  text-shadow: 0 0 2px black;
+
+$text-color-a: rgba(255, 255, 255, 0.809);
+$link-color: #267cb9;
+$link-hover-color: #4199d8;
+
+html * {
+  margin: 0;
+  padding: 0;
 }
 
-#wrap {
-  position: absolute;
-  width: 100%;
-  height: 200%;
+html, body {
+  font-family: 'Roboto', sans-serif;
+  color: $text-color-a;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  text-shadow: 0 0 2px black;
 }
 
 #background {
@@ -19,16 +30,6 @@ html {
   background-size: cover;
 }
 
-#gradient {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 61.8%;
-  width: 100%;
-  height: 38.2%;
-  background-image: linear-gradient(transparent, white);
-}
-
 #title {
   display: block;
   position: absolute;
@@ -37,7 +38,7 @@ html {
   transform: translateY(-50%);
 
   * {
-    color: rgba(255, 255, 255, 0.809);
+    color: $text-color-a;
     text-align: center;
   }
 
@@ -50,22 +51,14 @@ html {
   }
 }
 
-#content {
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-}
-
 #nav {
-  position: absolute;
   width: 100%;
   height: 48px;
+  margin-bottom: 24px;
 
   a {
-    color: #fff;
-    font-size: 2vw;
+    color: $text-color-a;
+    font-size: 24px;
 
     &:hover {
       color: $link-hover-color;
@@ -73,6 +66,7 @@ html {
   }
 
   ul {
+    height: 28px;
     margin: 10px 0;
   }
 
