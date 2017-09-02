@@ -1,6 +1,9 @@
 
-$text-color-a: #4d4d4d;
-$link-color: #267cb9;
+$color-a: #005581;
+$color-b: #ffd200;
+
+$text-color-a: #262626;
+$link-color: $color-a;
 $link-hover-color: #4199d8;
 
 html * {
@@ -55,12 +58,7 @@ hr {
   margin-bottom: 24px;
 
   a {
-    color: $text-color-a;
     font-size: 24px;
-
-    &:hover {
-      color: $link-hover-color;
-    }
   }
 
   ul {

@@ -1,5 +1,8 @@
 
-$text-color-a: #e6e6e6;
+$color-a: #005581;
+$color-b: #ffd200;
+
+$text-color-a: #fff;
 $link-color: #267cb9;
 $link-hover-color: #4199d8;
 
@@ -24,6 +27,7 @@ html, body {
   z-index: -1;
   background-position: center center;
   background-size: cover;
+  opacity: 0.7;
 }
 
 #title {
@@ -32,17 +36,17 @@ html, body {
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
-
-  * {
-    color: $text-color-a;
-    text-align: center;
-  }
+  background-color: $color-a;
+  padding: 20px 0;
 
   h1 {
+    text-align: center;
+    color: $color-b;
     font-size: 7vw;
   }
 
   p {
+    text-align: center;
     font-size: 4vw;
   }
 }
@@ -51,6 +55,7 @@ html, body {
   width: 100%;
   height: 48px;
   margin-bottom: 24px;
+  background-color: $color-a;
 
   a {
     color: $text-color-a;
