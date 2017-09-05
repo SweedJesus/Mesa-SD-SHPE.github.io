@@ -2,17 +2,16 @@
 ---
 <!doctype html>
 <html lang='{{ site.lang | default: "en-US" }}'>
-<head>
-  {% include head.html %}
-</head>
+{% include head.html %}
 <body>
   {% include header.html %}
   <div id="wrap">
     <div id="content">
+      {% if page.title %}
       <h1>{{ page.title }}</h1>
       <hr/>
+      {% endif %}
       {{ content }}
-      <div id="whitespace"></div>
     </div>
   </div>
 </body>
