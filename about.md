@@ -1,7 +1,8 @@
 ---
 layout: default
-title: ""
 ---
+
+A
 
 ## About
 
