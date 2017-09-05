@@ -150,3 +150,15 @@ nav {
     margin: 0 0 -3vw 0;
   }
 }
+
+#minutes {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 90%;
+  text-align: center;
+
+  a {
+    font-size: 2vw;
+  }
+}
