@@ -182,6 +182,9 @@ nav {
   background-color: $color-a;
   box-shadow: 0 0 4px black;
   padding-bottom: 10px;
+  box-shadow: 0 0 3px;
+  -moz-box-shadow: 0 0 3px;
+  -webkit-box-shadow: 0 0 3px;
 
   h1 {
     text-align: center;
