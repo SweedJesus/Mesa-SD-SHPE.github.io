@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<!--<script src="/assets/js/calendar.js" async></script>-->
+
+<link rel="stylesheet" href="assets/fullcalendar-3.5.0/fullcalendar.min.css"/>
+<script src="assets/fullcalendar-3.5.0/lib/jquery.min.js"></script>
+<script src="assets/fullcalendar-3.5.0/lib/moment.min.js"></script>
+<script src="assets/fullcalendar-3.5.0/fullcalendar.min.js"></script>
+<script src='assets/fullcalendar-3.5.0/gcal.min.js'></script>
+
+<div id="calendar"></div>
+
+<script type="application/javascript">
+$(document).ready(function() {
+$("#calendar").fullCalendar({
+googleCalendarApiKey: "AIzaSyBqQdMlDjc6mSI4Y0xoePdomwZcC8ANFLA",
+events: "mesasdshpe@gmail.com"
+});
+});
+</script>
