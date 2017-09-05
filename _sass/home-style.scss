@@ -1,97 +1,67 @@
+
+$color-mesa-blue: #005581;
+$color-mesa-yellow: #ffd200;
+$color-link: $color-mesa-yellow;
+$color-link-hover: #4199d8;
+
 $breakpoint-tablet: 768px;
-$breakpoint-phone: 480px;
 
 $font-size-4: 40px;
 $font-size-3: 34px;
 $font-size-2: 28px;
 $font-size-1: 24px;
 
-$font-size-4-phone: 26px;
-$font-size-3-phone: 22px;
-$font-size-2-phone: 18px;
-$font-size-1-phone: 14px;
-
-$color-a: #005581;
-$color-b: #ffd200;
-
-$text-color-a: #262626;
-$link-color: $color-a;
-$link-hover-color: #4199d8;
+$font-size-4-tablet: 26px;
+$font-size-3-tablet: 22px;
+$font-size-2-tablet: 18px;
+$font-size-1-tablet: 14px;
 
 html * {
   margin: 0;
   padding: 0;
 }
+
 html, body {
-  font-family: 'Roboto', sans-serif;
-  color: $text-color-a;
-  margin: 0;
-  padding: 0;
-}
-*:first-child {
-  padding-top: 0;
-}
-
-*:last-child {
-  margin-bottom: 0;
-}
-
-h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin-bottom: 20px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
-h1, h2 {
-  padding-top: 60px;
+  color: #ffd200;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 0 0 10px black;
 }
 
 h1 {
   font-size: $font-size-4;
   @media (max-width: $breakpoint-tablet) {
-    font-size: $font-size-4-phone;
+    font-size: $font-size-4-tablet;
   }
 }
 
 h2 {
   font-size: $font-size-3;
   @media (max-width: $breakpoint-tablet) {
-    font-size: $font-size-3-phone;
+    font-size: $font-size-3-tablet;
   }
 }
 
 h3 {
   font-size: $font-size-2;
   @media (max-width: $breakpoint-tablet) {
-    font-size: $font-size-2-phone;
+    font-size: $font-size-2-tablet;
   }
 }
 
 h4, h5, h6, p, a, li {
   font-size: $font-size-1;
   @media (max-width: $breakpoint-tablet) {
-    font-size: $font-size-1-phone;
+    font-size: $font-size-1-tablet;
   }
 }
 
 a {
-  color: $link-color;
+  color: $color-link;
   text-decoration: none;
   transition: 0.25s;
-
   &:hover {
-    color: $link-hover-color;
+    color: $color-link-hover;
   }
-}
-
-li {
-  margin-bottom: 5px;
-}
-
-hr {
-  margin-bottom: 20px;
 }
 
 nav {
@@ -103,9 +73,7 @@ nav {
     height: 40px;
     margin-bottom: 10px;
   }
-  a {
-    font-family: "Pacifico", cursive;
-  }
+
   ul {
     height: 28px;
     margin: 10px 0;
@@ -114,6 +82,7 @@ nav {
       margin: 10px 0;
     }
   }
+
   li {
     display: inline;
     list-style-type: none;
@@ -122,6 +91,7 @@ nav {
       padding: 0 4px;
     }
   }
+
   div {
     display: inline-block;
     width: 100%;
@@ -130,9 +100,11 @@ nav {
     }
     height: 100%;
   }
+
   .left {
     float: left;
   }
+
   .right {
     float: right;
     @media (max-width: $breakpoint-tablet) {
@@ -140,23 +112,6 @@ nav {
     }
   }
 }
-
-#wrap {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-#content {
-  width: 640px;
-  @media (max-width: $breakpoint-tablet) {
-    width: 260px;
-  }
-  margin: 0 auto;
-}
-
-// -----------------------------------------------------------------------------
-// Landing-page only styles below
 
 #background {
   position: absolute;
@@ -175,22 +130,22 @@ nav {
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
-  background-color: $color-a;
+  background-color: #005581;
   box-shadow: 0 0 4px black;
-  padding-bottom: 10px;
+
+  h1, p {
+    text-align: center;
+    font-weight: normal;
+  }
 
   h1 {
-    text-align: center;
-    color: $color-b;
     font-size: 7vw;
-    font-weight: normal;
+    margin: -5vw 0 0 0;
   }
 
   p {
-    text-align: center;
     font-size: 4vw;
-    font-weight: normal;
-    color: #fff;
+    color: white;
+    margin: 0 0 -3vw 0;
   }
 }
-

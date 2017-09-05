@@ -2,24 +2,19 @@
 ---
 <!doctype html>
 <html lang='{{ site.lang | default: "en-US" }}'>
-{% include head.html %}
-<style>
-* {
-  text-shadow: 0 0 10px black;
-}
-a {
-  color: #ffd200;
-}
-</style>
-<body>
-  {% include header.html %}
-  <div>
-    <div id="background" style="background-image:url('{{ '/assets/img/poster-SBSB.jpg' | absolute_url }}')"></div>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/home-style.css">
+  </head>
+  <body>
+    {% include header.html %}
+    <div>
+      <div id="background" style="background-image:url('{{ '/assets/img/poster-SBSB.jpg' | absolute_url }}')"></div>
       <!--<div id="gradient"></div>-->
       <div id="title">
-      <h1>San Diego Mesa College</h1>
-      <p>Society of Hispanic Professional Engineers</p>
+        <h1>San Diego Mesa College</h1>
+        <p>Society of Hispanic Professional Engineers</p>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
