@@ -2,10 +2,6 @@
 layout: default
 ---
 
-A
-
-## About
-
 We are an official chapter of the nationally recognized group the
 [Society of Hispanic Profession Engineers][SHPE].
 
@@ -17,6 +13,6 @@ We are an official chapter of the nationally recognized group the
 
   No, everyone is welcome.
 
-## Contact
+# Contact
 
 - <mesasdshpe@gmail.com>
