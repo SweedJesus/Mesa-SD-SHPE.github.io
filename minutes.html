@@ -4,6 +4,6 @@ title: "Minutes"
 ---
 <ul>
   {% for m in site.minutes %}
-  <li><a href="{{ m.url }}">{{ m.title }} ({{ m.date | date: "%B %-d, %Y" }})</a></li>
+  <li><a href="{{ m.url }}">{{ m.date | date: "%B %-d, %Y" }}</a></li>
   {% endfor %}
 </ul>
