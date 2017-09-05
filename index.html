@@ -2,19 +2,32 @@
 ---
 <!doctype html>
 <html lang='{{ site.lang | default: "en-US" }}'>
-{% include head.html %}
-<style>
-* {
-  text-shadow: 0 0 10px black;
-}
-a {
-  color: #ffd200;
-}
-</style>
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | absolute_url }}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
+  <style>
+  * {
+    text-shadow: 0 0 10px black;
+  }
+  a {
+    color: #ffd200;
+  }
+  </style>
+  <script>
+    var backgrounds = [
+      "assets/img/hompage-banner1-2.jpg",
+      "assets/img/poster-SBSB.jpg"
+    ];
+    function init() {
+    };
+  </script>
+</head>
 <body>
   {% include header.html %}
   <div>
-    <div id="background" style="background-image:url('{{ '/assets/img/poster-SBSB.jpg' | absolute_url }}')"></div>
+    <div id="background" style="background-image:url('{{ '/assets/img/poster-SBSB.jpg' | absolute_url }}')" onload="init()"></div>
       <!--<div id="gradient"></div>-->
       <div id="title">
       <h1>San Diego Mesa College</h1>
