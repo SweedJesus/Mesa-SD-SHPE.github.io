@@ -33,7 +33,7 @@ html, body {
 }
 
 *:last-child {
-  margin-bottom: 0;
+  //margin-bottom: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -91,7 +91,7 @@ li {
 }
 
 hr {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 nav {
@@ -136,7 +136,7 @@ nav {
   .right {
     float: right;
     @media (max-width: $breakpoint-tablet) {
-      float: none;
+      float: left;
     }
   }
 }
@@ -178,6 +178,9 @@ nav {
   background-color: $color-a;
   box-shadow: 0 0 4px black;
   padding-bottom: 10px;
+  box-shadow: 0 0 3px;
+  -moz-box-shadow: 0 0 3px;
+  -webkit-box-shadow: 0 0 3px;
 
   h1 {
     text-align: center;
