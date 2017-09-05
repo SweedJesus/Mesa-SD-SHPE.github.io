@@ -3,7 +3,7 @@ layout: default
 ---
 
 We are an official chapter of the nationally recognized group the
-[Society of Hispanic Profession Engineers][SHPE].
+[Society of Hispanic Professional Engineers][SHPE].
 
 [SHPE]: http://shpe.org/
 
